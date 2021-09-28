@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 20:05:38 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/28 10:16:45 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/28 15:45:34 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*get_next_line(int fd)
 	while (bytes_read > 0 && !ft_strchr(buffer_backup, '\n'))
 	{
 		bytes_read = read(fd, buffer, BUFFER_SIZE);
-		if (bytes_read == -1)
+		if (bytes_read == -1 || bytes_read == 0)
 			return (NULL);
 		buffer[BUFFER_SIZE] = '\0';
 		tmp_free = buffer_backup;
