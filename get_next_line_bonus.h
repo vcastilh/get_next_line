@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 11:29:01 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/10/01 11:32:08 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/10/01 13:29:28 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,4 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *s);
-char	*ft_strchr(const char *s, int c);
 #endif
