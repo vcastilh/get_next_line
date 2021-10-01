@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 11:15:53 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/10/01 13:28:32 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/10/01 14:45:46 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
 
 char	*read_file(int fd, char	*buffer, char **buffer_backup)
 {
