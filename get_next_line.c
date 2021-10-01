@@ -6,13 +6,13 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 20:05:38 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/30 23:53:50 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/10/01 01:16:11 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static char	*get_line(char	**buffer_backup, char	*ptr_n)
+char	*get_line(char	**buffer_backup, char	*ptr_n)
 {
 	char	*tmp_free;
 	char	*line_return;
@@ -58,6 +58,22 @@ char	*read_file(int fd, char	*buffer, char **buffer_backup)
 		tmp_free = NULL;
 	}
 	return (get_line(buffer_backup, ft_strchr(*buffer_backup, '\n')));
+}
+
+char	*ft_strchr(const char *s, int c)
+{
+	size_t	s_len;
+	char	*ptr;
+
+	ptr = (char *)s;
+	s_len = ft_strlen(ptr) + 1;
+	while (s_len--)
+	{
+		if (*ptr == (unsigned char)c)
+			return (ptr);
+		ptr++;
+	}
+	return (NULL);
 }
 
 char	*get_next_line(int fd)
