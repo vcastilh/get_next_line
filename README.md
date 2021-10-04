@@ -1,5 +1,5 @@
 # Get Next Line
-[Medal](/images/get_next_linem.jpg "Project Medal")
+[Medal](/images/get_next_linem.png "Project Medal")
 
 ### **Summary:** 
 The aim of this project is to code a function that returns a line, read
